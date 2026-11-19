@@ -1,0 +1,10 @@
+{
+  "name": "Ahmed Emad Portfolio",
+  "short_name": "Ahmed Portfolio",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#080808",
+  "lang": "ar",
+  "dir": "rtl"
+}

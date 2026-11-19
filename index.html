@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808"><link rel="manifest" href="manifest.webmanifest"><meta name="description" content="Ahmed Emad Portfolio">
+<title>Ahmed Emad | Portfolio</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="#home"><b>&lt;/&gt;</b> Ahmed <strong>Emad</strong></a>
+<button class="menu-toggle" id="menuToggle">☰</button>
+<nav id="nav"><a href="#home">الرئيسية</a><a href="#services">الخدمات</a><a href="#about">من أنا</a><a href="#works">أعمالي</a><a href="#order">اطلب خدمة</a><a href="#contact">تواصل</a></nav>
+<a class="nav-cta" href="#order">اطلب خدمتك</a>
+</header>
+<main>
+<section class="hero section" id="home">
+<div class="hero-copy"><div class="eyebrow">✦ أهلاً بك في عالمي الإبداعي</div>
+<h1>أحوّل أفكارك إلى<br><em>تصميمات وتجارب</em><br>رقمية مميزة.</h1>
+<p>أنا أحمد عماد، مهتم بالتصميم الجرافيكي وتطوير المواقع. أساعدك على تقديم مشروعك بصورة احترافية تليق به.</p>
+<div class="actions"><a class="btn gold" href="#services">اكتشف خدماتي ←</a><a class="btn outline" href="#works">شاهد أعمالي</a></div>
+<div class="tags">Graphic Design <i>•</i> Web Development <i>•</i> Branding</div></div>
+<div class="hero-visual"><div class="ring"></div><img src="assets/portfolio-hero.png" alt="Ahmed Emad Portfolio"><div class="badge"> &lt;/&gt; Creative Developer</div></div>
+</section>
+<section class="stats section"><div><b>تصميم</b><span>بهوية مميزة</span></div><div><b>مواقع</b><span>متجاوبة وسهلة الاستخدام</span></div><div><b>اهتمام</b><span>بكل تفاصيل مشروعك</span></div></section>
+<section class="section" id="services"><div class="heading"><small>ماذا أقدم لك؟</small><h2>خدمات <em>احترافية</em></h2><p>اختر الخدمة المناسبة وابدأ طلبك مباشرة.</p></div><div class="services-grid" id="servicesGrid"></div></section>
+<section class="about section" id="about"><img src="assets/desert-portrait.jpg" alt="أحمد عماد"><div><small>نبذة عني</small><h2>الإبداع يبدأ<br>من <em>فكرة بسيطة.</em></h2><p>أهتم بصناعة تصاميم جذابة ومواقع واضحة وسهلة الاستخدام. هدفي أن تحصل على نتيجة منظمة تعبر عنك وعن نشاطك.</p><div class="pills"><span>Graphic Design</span><span>Web Design</span><span>Brand Identity</span></div></div></section>
+<section class="section" id="works"><div class="heading"><small>لمحة بصرية</small><h2>معرض <em>الصور</em></h2><p>الصور التي أرسلتها ضمن الهوية البصرية للموقع.</p></div><div class="gallery"><img src="assets/portfolio-hero.png" alt="Portfolio"><img src="assets/desert-portrait.jpg" alt="Portrait"><img src="assets/magician-portrait.jpg" alt="Creative portrait"><img src="assets/sea-portrait.jpg" alt="Sea portrait"></div></section>
+<section class="section order-section" id="order"><div class="heading"><small>ابدأ مشروعك</small><h2>اطلب <em>خدمتك الآن</em></h2><p>املأ البيانات واختر الخدمة المناسبة.</p></div>
+<form id="orderForm"><div class="form-grid">
+<label>الاسم بالكامل<input name="name" required placeholder="اكتب اسمك"></label>
+<label>رقم واتساب<input name="phone" required inputmode="tel" placeholder="01xxxxxxxxx"></label>
+<label>الخدمة المطلوبة<select id="serviceSelect" name="service" required><option value="">اختر الخدمة</option></select></label>
+<label>السعر<input id="priceField" readonly placeholder="يظهر تلقائيًا"></label>
+<label class="full">تفاصيل الطلب<textarea name="details" rows="4" placeholder="اكتب تفاصيل الخدمة..."></textarea></label>
+<label class="full">كود الخصم (اختياري)<div class="coupon-row"><input id="couponInput" placeholder="أدخل كود الخصم"><button class="btn outline" id="applyCoupon" type="button">تطبيق الكود</button></div><small id="couponMessage">اسأل عبر واتساب عن أكواد الخصم المتاحة.</small></label>
+<label class="full">صورة إثبات التحويل (اختياري)<input id="proofFile" type="file" accept="image/*"><small>بعد فتح واتساب، أرسل صورة التحويل داخل المحادثة. لا يمكن للموقع إرسال الملف تلقائيًا.</small></label>
+</div>
+<div class="payment"><b>التحويل بالمحفظة</b><strong dir="ltr" id="walletNumber">01107037428</strong><button type="button" class="copy-wallet" id="copyWallet">نسخ رقم المحفظة</button><span>حوّل قيمة الطلب من تطبيق المحفظة ثم أرسل صورة التحويل عبر واتساب.</span></div>
+<div class="total"><span>الإجمالي</span><b id="totalPrice">— جنيه</b></div>
+<button class="btn gold submit" type="submit">إرسال الطلب عبر واتساب ←</button>
+<p class="hint">الدفع يتم من خلال تطبيق المحفظة الخاص بك، ولا يتم خصم أي مبلغ من داخل الموقع.</p>
+</form></section>
+<section class="contact section" id="contact"><div><small>دعنا نتحدث</small><h2>لديك فكرة؟ <em>لنبدأ تنفيذها.</em></h2><p>تواصل معي عبر واتساب، وقد تحصل على خصم رمزي عند التواصل المباشر.</p></div><a class="btn gold" href="https://wa.me/201280673759" target="_blank">تواصل عبر واتساب ↗</a></section>
+</main>
+<div class="offline-status" id="offlineStatus">حالة الاتصال: يتم التحقق...</div>\n<footer><a class="brand" href="#home"><b>&lt;/&gt;</b> Ahmed <strong>Emad</strong></a><span>© <span id="year"></span> Ahmed Emad</span><a href="#home">العودة للأعلى ↑</a></footer>
+<a class="floating-wa" href="https://wa.me/201280673759" target="_blank" aria-label="واتساب">WA</a>
+<script src="script.js"></script><script src="offline.js"></script></body></html>
